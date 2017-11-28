@@ -44,7 +44,9 @@ namespace DrawStar
             g.DrawLine(pen, x, y, x - 10, y + 30);
             g.DrawLine(pen, x - 10, y + 30, x - 10 - 31, y + 30);
             g.DrawLine(pen, x - 10 - 31, y + 30, x - 10 - 31 + 25, y + 30 + 19);
-            g.DrawLine(pen, x - 10 - 31 + 25, y + 30 + 19, )
+            g.DrawLine(pen, x - 10 - 31 + 25, y + 30 + 19, x - 10 - 31 + 25 - 11, y + 30 + 19 + 32);
+            g.DrawLine(pen, x - 10 - 31 + 25 - 11, y + 30 + 19 + 32, x, y + 30 + 19 + 32 - 19);
+            g.DrawLine(pen, x, y + 30 + 19 + 32 - 19, x + 27, y + 30 + 19 )
 
             //Calculating width
             //86-2 = 84
