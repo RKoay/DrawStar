@@ -18,6 +18,17 @@ namespace DrawStar
         }
         public void DrawStar(Pen pen, float x, float y, float size)
         {
+            int lineOne;
+            int lineTwo;
+            int lineThree;
+            int lineFour;
+            int lineFive;
+            int lineSix;
+            int lineSeven;
+            int lineEight;
+            int lineNine;
+            int lineTen; 
+
             Graphics g = this.CreateGraphics();
             g.DrawLine(pen, 43, 4, 33, 34);
             g.DrawLine(pen, 33, 34, 2, 34);
@@ -30,6 +41,14 @@ namespace DrawStar
             g.DrawLine(pen, 86, 34, 54, 34);
             g.DrawLine(pen, 54, 34, 43, 4);
 
+            g.DrawLine(pen, x, y, x - 10, y + 30);
+            g.DrawLine(pen, x - 10, y + 30, x - 10 - 31, y + 30);
+            g.DrawLine(pen, x - 10 - 31, y + 30, x - 10 - 31 + 25, y + 30 + 19);
+            g.DrawLine(pen, x - 10 - 31 + 25, y + 30 + 19, )
+
+            //Calculating width
+            //86-2 = 84
+           
         }
 
         private void starButton_Click(object sender, EventArgs e)
