@@ -44,16 +44,6 @@ namespace DrawStar
             int tenthydis = -30;
 
             Graphics g = this.CreateGraphics();
-            g.DrawLine(pen, 43, 4, 33, 34);
-            g.DrawLine(pen, 33, 34, 2, 34);
-            g.DrawLine(pen, 2, 34, 27, 53);
-            g.DrawLine(pen, 27, 53, 16, 85);
-            g.DrawLine(pen, 16, 85, 43, 66);
-            g.DrawLine(pen, 43, 66, 70, 85);
-            g.DrawLine(pen, 70, 85, 61, 53);
-            g.DrawLine(pen, 61, 53, 86, 34);
-            g.DrawLine(pen, 86, 34, 54, 34);
-            g.DrawLine(pen, 54, 34, 43, 4);
 
             g.DrawLine(pen, size * x, size * y, size * (x + firstxdis), size * (y + firstydis));
             g.DrawLine(pen, size*(x + firstxdis), size*(y + firstydis), size*(x + firstxdis + secondxdis), size*(y + firstydis + secondydis));
@@ -75,6 +65,7 @@ namespace DrawStar
 
         private void starButton_Click(object sender, EventArgs e)
         {
+            
         }
 
     }
