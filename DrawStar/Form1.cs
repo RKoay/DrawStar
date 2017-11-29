@@ -44,29 +44,43 @@ namespace DrawStar
             int tenthydis = -30;
 
             Graphics g = this.CreateGraphics();
-
-            g.DrawLine(pen, size * x, size * y, size * (x + firstxdis), size * (y + firstydis));
-            g.DrawLine(pen, size*(x + firstxdis), size*(y + firstydis), size*(x + firstxdis + secondxdis), size*(y + firstydis + secondydis));
-            g.DrawLine(pen, size*(x + firstxdis + secondxdis), size*( y + firstydis + secondydis), size*(x + firstxdis + secondxdis + thirdxdis), size*(y + firstydis + secondydis + thirdxdis));
-            g.DrawLine(pen, size*(x + firstxdis + secondxdis + thirdxdis), size*(y + firstydis + secondydis + thirdydis), size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis), size*( y + firstydis + secondydis + thirdydis + fourthydis));
-            g.DrawLine(pen, size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis), size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis));
-            g.DrawLine(pen, size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis), size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis), size*( y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis));
-            g.DrawLine(pen, size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis), size*( y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis), size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis));
-            g.DrawLine(pen, size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis), size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis), size*( y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis));
-            g.DrawLine(pen, size*( x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis), size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis + ninthxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis + ninthydis));
-            g.DrawLine(pen, size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis + ninthxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis + ninthydis), size*(x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis + ninthxdis + tenthxdis), size*(y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis + ninthydis + tenthydis));
+            g.DrawLine(pen, x, y, size * (x + firstxdis), size * (y + firstydis));
+            g.DrawLine(pen, size * (x + firstxdis), size * (y + firstydis), size * (x + firstxdis + secondxdis), size * (y + firstydis + secondydis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis), size * (y + firstydis + secondydis), size * (x + firstxdis + secondxdis + thirdxdis), size * (y + firstydis + secondydis + thirdxdis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis + thirdxdis), size * (y + firstydis + secondydis + thirdydis), size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis), size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis), size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis), size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis), size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis), size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis + ninthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis + ninthydis));
+            g.DrawLine(pen, size * (x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis + ninthxdis), size * (y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis + ninthydis), x + firstxdis + secondxdis + thirdxdis + fourthxdis + fifthxdis + sixthxdis + seventhxdis + eighthxdis + ninthxdis + tenthxdis, y + firstydis + secondydis + thirdydis + fourthydis + fifthydis + sixthydis + seventhydis + eighthydis + ninthydis + tenthydis);
 
             //Calculating width
             //86-2 = 84
 
-            
+
 
         }
 
         private void starButton_Click(object sender, EventArgs e)
         {
-            
+
         }
 
     }
 }
+
+            //Calculating width
+            //86-2 = 84
+            
+//Graphics g = this.CreateGraphics();
+//g.DrawLine(pen, 43, 4, 33, 34);
+//            g.DrawLine(pen, 33, 34, 2, 34);
+//            g.DrawLine(pen, 2, 34, 27, 53);
+//            g.DrawLine(pen, 27, 53, 16, 85);
+//            g.DrawLine(pen, 16, 85, 43, 66);
+//            g.DrawLine(pen, 43, 66, 70, 85);
+//            g.DrawLine(pen, 70, 85, 61, 53);
+//            g.DrawLine(pen, 61, 53, 86, 34);
+//            g.DrawLine(pen, 86, 34, 54, 34);
+//            g.DrawLine(pen, 54, 34, 43, 4);
