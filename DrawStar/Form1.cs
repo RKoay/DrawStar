@@ -42,7 +42,7 @@ namespace DrawStar
             int ninthydis = 0;
 
             Graphics g = this.CreateGraphics();
-            g.DrawLine(pen, x, y, (size *firstxdis) + x, (size * firstydis) + y);
+            g.DrawLine(pen, x, y, (size * firstxdis) + x, (size * firstydis) + y);
             g.DrawLine(pen, (size *firstxdis) + x, (size * firstydis) + y, (size * (firstxdis + secondxdis)) + x, (size *(firstydis + secondydis)) + y);
             g.DrawLine(pen, (size * (firstxdis + secondxdis)) + x, (size * (firstydis + secondydis)) + y, (size * (firstxdis + secondxdis + thirdxdis)) + x, (size * (firstydis + secondydis + thirdxdis)) + y);
             g.DrawLine(pen, (size * (firstxdis + secondxdis + thirdxdis)) + x, (size * (firstydis + secondydis + thirdxdis)) + y, (size *(firstxdis + secondxdis + thirdxdis + fourthxdis)) + x, (size * (firstydis + secondydis + thirdydis + fourthydis)) + y);
